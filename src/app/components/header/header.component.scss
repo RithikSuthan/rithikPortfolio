@@ -1,0 +1,50 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: lightgray;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Added background-color transition */
+}
+
+a:hover::after {
+    width: 100%;
+    background-color: lightgray; /* Ensure background-color is applied on hover */
+}
+
+a:hover {
+    color: rgb(122, 122, 122); /* Add this line to change text color on hover */
+}
+
+
+.main
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3%;
+    align-items: baseline;
+}
+.logo
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-family:Poppins, sans-serif;
+    font-size: 2rem;
+}
+.navbar
+{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
