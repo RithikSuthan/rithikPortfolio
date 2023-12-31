@@ -39,12 +39,14 @@ export class BodyComponent implements OnInit {
   {
     alert("Contact");
   }
-  loadLinkedin()
-  {
-    alert("Load linkedin");
+  loadLinkedin() {
+    const linkedinUrl = 'https://www.linkedin.com/in/rithiksuthan/';
+    window.open(linkedinUrl, '_blank');
   }
+  
   loadGithub()
   {
-    alert("Github");
+    const linkedinUrl = 'https://github.com/RithikSuthan';
+    window.open(linkedinUrl, '_blank');
   }
 }
