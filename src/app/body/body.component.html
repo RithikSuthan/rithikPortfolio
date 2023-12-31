@@ -1,1 +1,18 @@
-<p>body works!</p>
+<div class="main" style="display: flex;flex-direction: row;justify-content: center;gap: 10%;">
+    <div style="display: flex;">
+        <img src="../../assets/photo-PhotoRoom-transformed.png" alt="Photo" class="photo">
+    </div>
+    <div style="display: flex;flex-direction: column;justify-content: center;text-align: center;">
+            <div><span style="font-weight: 600;color: rgb(85,85,85);font-family: Popins,sans-serif;">Hello, I'm</span></div>
+            <div><h1 style="font-size: 3rem;text-align: center;font-weight: bold;font-family: Popins,sans-serif;">Rithik Suthan</h1></div>
+            <div><p style="font-size: 1.75rem;font-weight: 600;font-family: Popins,sans-serif;color: rgb(85,85,85)">Fullstack Developer</p></div>
+            <div style="display: flex;flex-direction: row;justify-content: space-evenly;">
+                <button (click)="downloadResume()" class="btn btn-outline-primary">Download CV</button>
+                <button (click)="contactInfo()" class="btn btn-color-1">Contact Info</button>
+            </div>
+            <div style="display: flex;flex-direction: row;justify-content: space-evenly;">
+                <img src="../../assets/linkedin.png" alt="linkedin" class="icon" (click)="loadLinkedin()">
+                <img src="../../assets/github.png" alt="github" class="icon" (click)="loadGithub()">
+            </div>
+    </div>
+</div>

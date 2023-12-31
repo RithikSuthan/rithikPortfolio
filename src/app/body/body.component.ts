@@ -11,5 +11,20 @@ export class BodyComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  downloadResume()
+  {
+    alert("Download Resume");
+  }
+  contactInfo()
+  {
+    alert("Contact");
+  }
+  loadLinkedin()
+  {
+    alert("Load linkedin");
+  }
+  loadGithub()
+  {
+    alert("Github");
+  }
 }
