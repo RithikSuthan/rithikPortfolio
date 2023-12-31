@@ -1,9 +1,10 @@
 <div class="main">
     <div class="logo">Rithik Suthan</div>
     <div class="navbar">
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a (click)="scrollTo('about')">About</a>
+        <a (click)="scrollTo('experience')">Experience</a>
+        <a (click)="scrollTo('projects')">Projects</a>
+        <a (click)="scrollTo('contact')">Contact</a>
     </div>
 </div>
+<router-outlet></router-outlet>
