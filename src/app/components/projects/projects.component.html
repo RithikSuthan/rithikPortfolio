@@ -1,4 +1,41 @@
-<div id="project">
-    <p>projects works!</p>
-</div>
+<br><br><br>
+<div style="display: flex;flex-direction: column;" id="projects">
+    <div style="display: flex;width: 100%;align-items: center;flex-direction: column;">
+        <div style="position: absolute;bottom: -102%;"><h3 style="color: rgb(85, 85, 85);font-family:Poppins, sans-serif;">Browse My Recent</h3></div>
+        <div> <h1 style="font-size: 3rem;font-weight: bold;font-family:Poppins, sans-serif;">Projects</h1></div>
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <div style="display: flex;flex-direction: row;justify-content: space-evenly;">
+            
+            <div style="padding: 1.5rem;
+            flex: 1;
+            background: white;
+            border-radius: 2rem;
+            border: rgb(53, 53, 53) 0.1rem solid;
+            border-color: rgb(163, 163, 163);
+            text-align: center;font-family: Poppins,sans-serif;
+            margin-left: 5%;margin-right: 5%;">
 
+            <img src="../../../assets/makemyjourney.png" alt="tick" style="height: 10rem;"><br><br>
+            <span style="font-size: 1.17em; font-family: sans-serif;font-weight: bold;">Make My Journey</span><br><br>
+            <button (click)="openMakeMyJourney()" class="btn btn-color-2" style="cursor: pointer;">Github</button>
+        </div>
+
+        <div style="padding: 1.5rem;
+        flex: 1;
+        background: white;
+        border-radius: 2rem;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        text-align: center;font-family: Poppins,sans-serif;
+        margin-left: 5%;margin-right: 5%;">
+
+        <img src="../../../assets/carPricePrediction.png" alt="tick" style="height: 10rem;"><br><br>
+        <span style="font-size: 1.17em; font-family: sans-serif;font-weight: bold;">Car Price Prediction</span><br><br>
+        <button (click)="openCarPrice()" class="btn btn-color-2" style="cursor: pointer;">Github</button>
+    </div>
+
+        </div>
+
+    </div>
+</div>

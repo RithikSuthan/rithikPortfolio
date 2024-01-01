@@ -37,4 +37,14 @@ export class ProjectsComponent implements OnInit {
     return this.el.nativeElement;
   }
 
+  openMakeMyJourney()
+  {
+      const url = 'https://github.com/RithikSuthan/Make-My-Journey';
+      window.open(url, '_blank');
+  }
+  openCarPrice()
+  {
+    const url = 'https://github.com/RithikSuthan/Car-Price_Prediction';
+    window.open(url, '_blank');
+  }
 }
