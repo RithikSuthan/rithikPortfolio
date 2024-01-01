@@ -1,5 +1,5 @@
 // header.component.ts
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ScrollService } from '../../services/scroll.service';
 
@@ -10,7 +10,8 @@ import { ScrollService } from '../../services/scroll.service';
 })
 export class HeaderComponent implements AfterViewInit {
 
-  constructor(private router: Router, private scrollService: ScrollService) {}
+  constructor(private router: Router, private scrollService: ScrollService) {
+  }
 
   ngAfterViewInit(): void {
     this.scrollToFragmentFromRoute();
@@ -25,5 +26,8 @@ export class HeaderComponent implements AfterViewInit {
     if (currentFragment) {
       this.scrollTo(currentFragment);
     }
+  }
+  ngOnit()
+  {
   }
 }
