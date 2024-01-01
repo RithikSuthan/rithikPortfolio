@@ -1,3 +1,37 @@
-<div id="contact">
-    <p>contact works!</p>
+<br><br><br>
+<div style="display: flex;flex-direction: column;" id="projects">
+    <div style="display: flex;width: 100%;align-items: center;flex-direction: column;">
+        <div style="position: absolute;bottom: -161%;"><h3 style="color: rgb(85, 85, 85);font-family:Poppins, sans-serif;">Get In Touch</h3></div>
+        <div> <h1 style="font-size: 3rem;font-weight: bold;font-family:Poppins, sans-serif;">Contact Me</h1></div>
+    </div>
+    <div style="display: flex;flex-direction: column;">            
+            <div style="padding: 1.5rem;
+            flex: 1;
+            background: white;
+            border-radius: 2rem;
+            border: rgb(53, 53, 53) 0.1rem solid;
+            border-color: rgb(163, 163, 163);
+            text-align: center;font-family: Poppins,sans-serif;
+            margin-left: 5%;margin-right: 5%;">
+
+<form [formGroup]="dataForm" class="mt-4">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" formControlName="name">
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" formControlName="email">
+    </div>
+  
+    <div class="form-group">
+      <label for="message">Message</label>
+      <input type="text" id="message" formControlName="message">
+    </div>
+  
+    <button type="button" (click)="postData()" class="btn btn-color-1" style="color: white;background-color: black;cursor: pointer;">Submit</button>
+  </form>
+            
+            </div>
 </div>
