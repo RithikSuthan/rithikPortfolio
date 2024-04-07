@@ -1,5 +1,5 @@
 // header.component.ts
-import { Component, AfterViewInit, Input } from '@angular/core';
+import { Component, AfterViewInit, Input, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { ScrollService } from '../../services/scroll.service';
 
@@ -10,8 +10,11 @@ import { ScrollService } from '../../services/scroll.service';
 })
 export class HeaderComponent implements AfterViewInit {
 
+  sideFlag:any;
   constructor(private router: Router, private scrollService: ScrollService) {
+    this.sideFlag=false;
   }
+
 
   ngAfterViewInit(): void {
     this.scrollToFragmentFromRoute();
@@ -27,7 +30,23 @@ export class HeaderComponent implements AfterViewInit {
       this.scrollTo(currentFragment);
     }
   }
-  ngOnit()
+  hideSideNav()
   {
+      this.sideFlag=!this.sideFlag;
+  }
+  onClickOutsideSideNav(event: MouseEvent) {
+    const sideNavElement = document.querySelector('.sideNav') as HTMLElement;
+    const toggleIconElement = document.querySelector('.toggleButton') as HTMLElement; // Replace '.github-icon' with the appropriate selector for your GitHub line icon
+    if (sideNavElement && !sideNavElement.contains(event.target as Node) && !toggleIconElement.contains(event.target as Node)) {
+        this.hideSideNav();
+    }
+  }
+
+  ngOnInit() {
+    document.addEventListener('click', this.onClickOutsideSideNav.bind(this));
+  }
+
+  ngOnDestroy() {
+    document.removeEventListener('click', this.onClickOutsideSideNav.bind(this));
   }
 }

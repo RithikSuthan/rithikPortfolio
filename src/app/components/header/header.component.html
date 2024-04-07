@@ -1,10 +1,26 @@
-<div class="main">
-    <div class="logo">Rithik Suthan</div>
-    <div class="navbar">
+<div class="header flex flex-row w-full justify-between mt-5">
+    <div class="w-1/4 text-3xl">Rithik Suthan</div>
+    <div class="flex flex-row w-2/4 justify-around">
         <a (click)="scrollTo('about')">About</a>
         <a (click)="scrollTo('experience')">Experience</a>
         <a (click)="scrollTo('project')">Projects</a>
         <a (click)="scrollTo('contact')">Contact</a>
     </div>
 </div>
+
+<div class="flex flex-row w-full absolute z-10">
+    <div class="flex flex-row w-full justify-between mt-5 sideNav" *ngIf="sideFlag">
+    <div class="w-1/4 text-3xl sidelogo mt-3.5">Rithik Suthan</div>
+    <div class="flex flex-row w-2/4 justify-around sideLink">
+        <a (click)="scrollTo('about')">About</a>
+        <a (click)="scrollTo('experience')">Experience</a>
+        <a (click)="scrollTo('project')">Projects</a>
+        <a (click)="scrollTo('contact')">Contact</a>
+    </div>
+</div>
+<span class="m-2 ml-4"><img src="../../../assets/sideBar.png" alt="sideBar" class="toggleButton" (click)="hideSideNav()"></span>
+
+</div>
+
+
 <router-outlet></router-outlet>
