@@ -11,3 +11,17 @@
     width: 8rem;
     border-radius: 2rem;
 }
+@media (max-width: 600px) {
+.mainDiv
+{
+    display: flex;flex-direction: column;justify-content: space-evenly;
+}
+}
+
+@media (min-width: 601px) {
+    .mainDiv
+{
+    display: flex;flex-direction: row;justify-content: space-evenly;
+}
+
+}
