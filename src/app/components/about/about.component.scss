@@ -1,0 +1,41 @@
+
+    @media (max-width: 600px) {
+        .experience
+        {
+                    padding: 1.5rem;
+                    flex: 1;
+                    background: white;
+                    border-radius: 2rem;
+                    border: rgb(53, 53, 53) 0.1rem solid;
+                    border-color: rgb(163, 163, 163);
+                    text-align: center;font-family: Poppins,sans-serif;
+                    margin-left: 5%;margin-right: 5%;
+                    margin-bottom: 8%;
+        }
+        .mainDiv
+        {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+        }
+    }
+    
+    @media (min-width: 601px) {
+        .experience
+        {
+                    padding: 1.5rem;
+                    flex: 1;
+                    background: white;
+                    border-radius: 2rem;
+                    border: rgb(53, 53, 53) 0.1rem solid;
+                    border-color: rgb(163, 163, 163);
+                    text-align: center;font-family: Poppins,sans-serif;
+                    margin-left: 5%;margin-right: 5%;
+        }
+        .mainDiv
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+        }
+    }
