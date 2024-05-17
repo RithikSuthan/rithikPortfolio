@@ -37,7 +37,7 @@ export class BodyComponent implements OnInit {
    }
   contactInfo()
   {
-    alert("Contact");
+    window.open('tel:6383704021');
   }
   loadLinkedin() {
     const linkedinUrl = 'https://www.linkedin.com/in/rithiksuthan/';
@@ -46,7 +46,7 @@ export class BodyComponent implements OnInit {
   
   loadGithub()
   {
-    const linkedinUrl = 'https://github.com/RithikSuthan';
-    window.open(linkedinUrl, '_blank');
+    const githubUrl = 'https://github.com/RithikSuthan';
+    window.open(githubUrl, '_blank');
   }
 }
