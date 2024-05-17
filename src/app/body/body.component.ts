@@ -15,7 +15,7 @@ export class BodyComponent implements OnInit {
   ngOnInit(): void {
   }
   downloadResume() {
-    const resumeUrl = '../../assets/RITHIK_SUTHAN_S_2031035.pdf';
+    const resumeUrl = '../../../assets/Rithik-Suthan-S-Software Resume.pdf';
 
     this.http.get(resumeUrl, { responseType: 'blob' }).subscribe((blob: Blob) => {
       const blobUrl = URL.createObjectURL(blob);
