@@ -13,6 +13,7 @@ import { BodyComponent } from './body/body.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LeetstatsComponent } from './components/leetstats/leetstats.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
-    BodyComponent
+    BodyComponent,
+    LeetstatsComponent
   ],
   imports: [
     BrowserModule,
