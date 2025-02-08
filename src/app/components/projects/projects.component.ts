@@ -59,7 +59,7 @@ export class ProjectsComponent implements OnInit {
   }
   openMelinia()
   {
-    const url = 'https://melinia24.tech';
+    const url = 'https://melinia-2024-melinia-cits-projects.vercel.app/';
     window.open(url, '_blank');
   }
   openMeliniaGithub()
