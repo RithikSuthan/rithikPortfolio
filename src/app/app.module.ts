@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LeetstatsComponent } from './components/leetstats/leetstats.component';
+import { GitHubStatsComponent } from './components/git-hub-stats/git-hub-stats.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LeetstatsComponent } from './components/leetstats/leetstats.component';
     ProjectsComponent,
     ContactComponent,
     BodyComponent,
-    LeetstatsComponent
+    LeetstatsComponent,
+    GitHubStatsComponent
   ],
   imports: [
     BrowserModule,
