@@ -21,4 +21,9 @@ export class MailService {
     const url=this.email_service_url+EndPoints.contact;
     return this.http.post<any>(url,postObj);
   }
+  portfolioVisit(postObj:any)
+  {
+    const url=this.email_service_url+EndPoints.portfolioVisit;
+    return this.http.post<any>(url,postObj);
+  }
 }
